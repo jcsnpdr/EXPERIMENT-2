@@ -1,0 +1,34 @@
+#include<iostream>
+ 
+using namespace std;
+ 
+main()
+{
+	int sum, a, rpt;
+	sum = 0;
+	
+	cout << "Enter a Number: ";
+	cin >> a;
+	
+	for (;;)
+	{
+		if (a > 0)
+		{
+			sum =0;
+			
+			for (rpt = 1; rpt <= a; rpt++)
+			{
+			sum = sum + rpt;
+			}
+			cout << "The sum of all whole numbers from 1 to " << a << " is " << sum << endl;
+			
+			cout << "Enter a Number: ";
+			cin >> a;	
+		}
+		else
+		{
+			cout << endl << "thank you!"; break;
+		}
+	}
+return 0;
+}
