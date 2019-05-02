@@ -1,0 +1,28 @@
+#include<iostream>
+ 
+using namespace std;
+ 
+main()
+{
+   int n, c, first, second, next;
+first = 0;
+second = 1;
+ 
+ 
+   cout << "The next 20 numbers of Fibonacci series for 0 and 1:" << endl;
+ 
+   for ( c = 0 ; c < 22 ; c++ )
+   {
+      if ( c <= 1 )
+         next = c;
+      else
+      {
+         next = first + second;
+         first = second;
+         second = next;
+      }
+      cout << next <<",";
+   }
+ 
+   return 0;
+}
