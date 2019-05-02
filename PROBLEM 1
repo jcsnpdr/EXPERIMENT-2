@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int h, a, b;
+char letter;
+
+
+cout << "Please enter the letter of your package: ";
+cin >> letter;
+
+
+
+switch (letter)
+{
+	case 'a':
+	case 'A':
+		cout << "Enter the amount of hours consumed: ";
+		cin >> h;
+		if (h>0 && h <= 10)
+		cout << endl << "total amount due: P" << 995;
+		else
+		cout << endl << "total amount due: P" << 995 + ((h-10)*20);
+	break;
+	
+	case 'b':
+	case 'B':
+		cout << "Enter the amount of hours consumed: ";
+		cin >> h;
+		if (h>0 && h <= 20)
+		cout << endl << "total amount due: P" << 1495;
+		else
+		cout << endl << "total amount due: P" << 1495 + ((h-20)*10);
+	break;
+	
+	case 'c':
+	case 'C':
+		cout << endl << "total amount due: P" << 1995;
+	break;
+	
+	default:
+	cout << "Ivalid Input! Please Enter a Letter from A to C";
+	
+}
+
+return 0;
+}
